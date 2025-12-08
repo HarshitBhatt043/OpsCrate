@@ -1,12 +1,17 @@
 # OpsCrate: Your Unified GitOps Toolbox
 
+[![GitOps](https://img.shields.io/badge/GitOps-Declarative%20Infra-0A7ACC?style=for-the-badge&logo=git&logoColor=white)]()
+[![Bash](https://img.shields.io/badge/Bash-Automation-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)]()
+[![Ansible](https://img.shields.io/badge/Ansible-Automation-EE0000?style=for-the-badge&logo=ansible&logoColor=white)]()
+[![AI](https://img.shields.io/badge/AI-Prompt%20Engineering-8A2BE2?style=for-the-badge&logo=openai&logoColor=white)]()
+
 OpsCrate is a centralized GitOps repository designed to manage multiple aspects of infrastructure and automation in isolated orphan branches. It combines Bash scripts, Ansible playbooks, CI/CD workflows, and AI prompt engineering into a single declarative source-of-truth, enabling real-time synchronization and control over your server environments and automation pipelines.
 
 This repo embraces a multi-branch strategy where each orphan branch contains focused resources—ranging from shell scripts to AI content—allowing granular versioning and deployment of distinct service domains independently.
 
 ---
 
-## Table of Contents
+## Table of Contents <a id="table-of-contents"></a>
 
 - [Project Overview](#project-overview)
 - [Repository Structure](#repository-structure)
@@ -18,7 +23,7 @@ This repo embraces a multi-branch strategy where each orphan branch contains foc
 
 ---
 
-## Project Overview
+## Project Overview <a id="project-overview"></a>
 
 OpsCrate functions as an all-in-one resource hub for DevOps engineers managing heterogeneous environments. It tracks and runs:
 
@@ -31,7 +36,7 @@ The `main` branch serves as a lightweight entry point, containing only this READ
 
 ---
 
-## Repository Structure
+## Repository Structure <a id="repository-structure"></a>
 
 The repo uses multiple orphan branches; notable ones include:
 
@@ -46,7 +51,7 @@ Each branch is designed to be cloned independently and managed separately, enabl
 
 ---
 
-## Branch Management & Workflow
+## Branch Management & Workflow <a id="branch-management--workflow"></a>
 
 OpsCrate employs a manual branch checkout model supplemented by an alias `pullall` that automates fetching, pruning, and updating all branches with fast-forward merges where possible.
 
@@ -68,7 +73,7 @@ flowchart LR
 
 ---
 
-## Detailed Branch Content
+## Detailed Branch Content <a id="detailed-branch-content"></a>
 
 ```mermaid
 graph TD
@@ -111,7 +116,7 @@ Stores tested AI prompt sets, chat logs, and other prompt engineering resources.
 
 ---
 
-## Working Process & Automation
+## Working Process & Automation <a id="working-process--automation"></a>
 
 - Users clone OpsCrate and switch between orphan branches manually for targeted updates.
 - The `pullall` alias keeps local branches synchronized with remote efficiently.
@@ -153,7 +158,7 @@ git checkout $current_branch'
 
 ---
 
-## Best Practices & Security
+## Best Practices & Security <a id="best-practices--security"></a>
 
 - **Keep secrets out of this repository.** Use environment variables or secret management tools instead.
 - **Regularly prune obsolete branches** using the provided alias to avoid local clutter and confusion.
@@ -164,7 +169,7 @@ git checkout $current_branch'
 
 ---
 
-## FAQ & Troubleshooting
+## FAQ & Troubleshooting <a id="faq--troubleshooting"></a>
 
 | Issue                             | Cause                                  | Solution                                     |
 | --------------------------------- | -------------------------------------- | -------------------------------------------- |
@@ -176,4 +181,8 @@ git checkout $current_branch'
 ---
 
 OpsCrate — the comprehensive GitOps repository that unifies your DevOps, automation, and AI content management under one roof!
+
+---
+
+[⬆️ Back to Top](#table-of-contents)
 **THIS REPOSITORY IS ENCRYPTED. IF YOU'RE HERE, YOU'RE EITHER VERY BRAVE OR VERY LOST. EITHER WAY, GOOD LUCK!**
